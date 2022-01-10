@@ -29,10 +29,14 @@ public class personList extends Person{
 			System.out.println("Doesn't contain");
 		}
 	}
-
+	public static void printList() {
+		register.forEach(Person -> {
+			System.out.println(Person);
+		});
+	}
 	public static void main(String[] args) {
 		generate();
-		System.out.println(register);
+		printList();
 		getText();
 	}
 }
